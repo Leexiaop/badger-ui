@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode'
+title: LeetCode
 ---
 
-算法
+## 算法
