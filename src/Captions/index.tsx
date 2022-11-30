@@ -3,21 +3,25 @@ import React, { useState, useRef, useEffect } from 'react';
 let requestId: any = null;
 
 export default ({
-	list,
-	isAnimation = false,
-	direction = 'inline',
+	list = [],
 	speed = 2,
-	mode = 'normal',
 	color = '#1a88e7',
 	textStyle = {},
+	isStop = true,
+	onMouseLeave,
+	onMouseOver,
+	onClick,
+	children,
 }: {
-	list: Array<String>;
-	isAnimation?: Boolean;
-	direction?: String;
-	speed?: any;
-	mode?: String;
-	color?: String;
+	list?: Array<String>;
+	speed?: number;
+	color?: string;
 	textStyle: Object;
+	isStop?: Boolean;
+	onMouseLeave: Function;
+	onMouseOver: Function;
+	onClick: Function;
+	children?: any;
 }) => {
 	const [key, setKey] = useState<number>(0);
 	const containerRef = useRef<any>(null);
@@ -26,27 +30,19 @@ export default ({
 	useEffect(() => {
 		let container = containerRef?.current?.clientWidth;
 		textRef.current.style.left = container + 'px';
-		const timer = setInterval(() => {
-			if (list && list.length) {
-				showSubTitle();
-			} else {
-				clearInterval(timer);
-			}
-		}, 1000);
+		onAnimation();
 		return () => {
-			clearInterval(timer);
 			cancelAnimationFrame(requestId);
 		};
 	}, []);
 
-	const showSubTitle = () => {
+	const onAnimation: any = (): void => {
 		let textWidth = textRef.current?.clientWidth; // 文字宽度
 		let textLeft = parseInt(textRef.current?.style?.left, 10); // 相对父元素偏移距离
 		if (textLeft > -textWidth) {
 			if (textRef?.current?.style) {
 				textRef.current.style.left = textLeft - speed + 'px';
 			}
-			requestId = requestAnimationFrame(showSubTitle);
 		} else {
 			let nextIndex = key !== list.length - 1 ? key + 1 : 0;
 			setKey(nextIndex);
@@ -55,10 +51,26 @@ export default ({
 					containerRef?.current?.clientWidth + 'px';
 			}
 			textWidth = textRef?.current?.clientWidth;
-			cancelAnimationFrame(requestId);
 		}
+		requestId = requestAnimationFrame(onAnimation);
 	};
 
+	const onTextMouseOver: any = (index: number): void => {
+		if (isStop) {
+			cancelAnimationFrame(requestId);
+		}
+		onMouseOver && onMouseOver(index);
+	};
+	const onTextMouseLeave: any = (index: number): void => {
+		if (isStop) {
+			onAnimation();
+		}
+		onMouseLeave && onMouseLeave(index);
+	};
+
+	const onTextClick = (index: number) => {
+		onClick && onClick(index);
+	};
 	return (
 		<>
 			<div
@@ -79,12 +91,14 @@ export default ({
 						display: 'inline-block',
 						whiteSpace: 'nowrap',
 						cursor: 'pointer',
+						color: color,
 						...textStyle,
 					}}
-					// onMouseOver={this.onMouseOver}
-					// onMouseLeave={this.onMouseLeave}
+					onClick={() => onTextClick(key)}
+					onMouseOver={() => onTextMouseOver(key)}
+					onMouseLeave={() => onTextMouseLeave(key)}
 				>
-					{list[key]}
+					{list.length ? list[key] : children}
 				</span>
 			</div>
 		</>

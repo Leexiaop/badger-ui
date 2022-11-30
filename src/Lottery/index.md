@@ -1,18 +1,19 @@
 ---
+title: 抽奖
 nav:
-    title: Components
+    title: 抽奖
     path: /components
 ---
 
-## Foo
+## 代码演示
 
-Demo:
+### Demo
 
 ```tsx
 import React from 'react';
-import { Foo } from 'badger-ui';
+import { Lottery } from 'badger-ui';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Lottery title="First Demo" />;
 ```
 
 More skills for writing demo:

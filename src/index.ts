@@ -1,2 +1,2 @@
-export { default as Foo } from './Foo';
-export { default as Subtitle } from './Subtitle';
+export { default as Lottery } from './Lottery';
+export { default as Captions } from './Captions';

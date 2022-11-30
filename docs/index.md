@@ -26,7 +26,7 @@ features:
     - icon: /images/6.png
       title: 未来路在哪里，路在脚下
       desc: 我们在组件的设计上，并不会过多的关注UI方面的问题，将UI方面的样式尽量留给使用者，我们设计的核心是解决业务中的相关问题。这是我们唯一的出发点。
-footer: Open-source MIT Licensed | Copyright © 2022<br />Powered by Lee!
+footer: 备案号 A20220625-0033 | Copyright © 2022<br />Powered by Lee!
 ---
 
 ## Badger-UI 的由来
