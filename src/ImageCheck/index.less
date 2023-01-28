@@ -1,0 +1,74 @@
+/* 图形拼图验证码 */
+.check {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	background-image: url(https://img0.baidu.com/it/u=2028084904,3939052004&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.check::before {
+	position: absolute;
+	top: 100px;
+	left: 280px;
+	width: 50px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid #fff;
+	content: '';
+}
+
+.check-child {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background-image: inherit;
+	background-repeat: inherit;
+	background-position: -280px -100px;
+	background-size: 400px 300px;
+	border: 1px solid #fff;
+	content: '';
+}
+/* 拖动条 */
+.drag {
+	position: relative;
+	width: 400px;
+	height: 50px;
+	margin-top: 10px;
+	background-color: #e3e3e3;
+}
+/* 可拖动的盒子 */
+.drag-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	background-color: aquamarine;
+}
+/* 提示文字说明 */
+.drag-tips {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	color: #8a8a8a;
+	font-size: 12px;
+	user-select: none;
+}
+
+@keyframes move {
+	to {
+		transform: translateX(0);
+	}
+}

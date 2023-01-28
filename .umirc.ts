@@ -25,12 +25,12 @@ export default defineConfig({
 			path: '/study',
 		},
 		{
-			title: 'LeetCode',
-			path: '/leetcode',
+			title: '前端源码解析',
+			path: '/code',
 		},
 		{
-			title: '关于我',
-			path: '/about',
+			title: 'LeetCode',
+			path: '/leetcode',
 		},
 		{
 			title: 'GitHub',
