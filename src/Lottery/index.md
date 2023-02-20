@@ -13,7 +13,7 @@ nav:
 import React from 'react';
 import { Lottery } from 'badger-ui';
 
-export default () => <Lottery title="First Demo" />;
+export default () => <Lottery title="抽奖" />;
 ```
 
 More skills for writing demo:
