@@ -2,8 +2,8 @@
 title: 生命周期篇之初始化Injections
 ---
 
-![vue生命周期](/images/vue_life_cycle.jpg) 来自 vue 官网的生命周期流程，我们可以
-看出 vue 的生命周期分为四个阶段：
+![vue生命周期](http://ibadgers.cn/images/vue_life_cycle.jpg) 来自 vue 官网的生命
+周期流程，我们可以看出 vue 的生命周期分为四个阶段：
 
 -   初始化阶段：为 Vue 实例上初始化一些属性，事件以及响应式数据；
 -   模板编译阶段：将模板编译成渲染函数；

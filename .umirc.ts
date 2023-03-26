@@ -2,8 +2,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
 	title: '前端平头哥',
-	favicon: '/images/logo.ico',
-	logo: '/images/logo.png',
+	favicon: 'http://ibadgers.cn/images/logo.ico',
+	logo: 'http://ibadgers.cn/images/logo.png',
 	outputPath: 'docs-dist',
 	mode: 'site',
 	publicPath: '/',

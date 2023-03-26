@@ -197,4 +197,4 @@ output: {
 
 ## 总结
 
-![webpack打包流程](/images/program_webpack_2.png)
+![webpack打包流程](http://ibadgers.cn/images/program_webpack_2.png)

@@ -93,4 +93,4 @@ export function parse(template, options) {
 
 模版编译的大致流程图：
 
-![模版编译](/images/vue_template_compliar.png)
+![模版编译](http://ibadgers.cn/images/vue_template_compliar.png)

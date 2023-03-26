@@ -54,7 +54,7 @@ function createElm(vnode, parentElm, refElm) {
 
 整个流程:
 
-![vue创建VNode流程](/images/vue_create_ele.png)
+![vue创建VNode流程](http://ibadgers.cn/images/vue_create_ele.png)
 
 ## 删除节点
 
@@ -165,7 +165,7 @@ function patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly) {
 
 整体的流程：
 
-![vue中VNode更新流程](/images/vue_vnode_update.png)
+![vue中VNode更新流程](http://ibadgers.cn/images/vue_vnode_update.png)
 
 你可能注意到了，如果新旧 VNode 里都包含了子节点，那么对于子节点的更新在代码里调
 用了 updateChildren 方法.下一张学习这个方法。
