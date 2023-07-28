@@ -4,7 +4,7 @@ title: 基础数据类型
 
 Typescript 的基础数据类型和 JavaScript 的基础数据类型基本一样。
 
-### 布尔值
+### 布尔值 Boolean
 
 值为 true 或者是 false 的就是布尔值，这在其他语言里也一样。
 
@@ -12,7 +12,7 @@ Typescript 的基础数据类型和 JavaScript 的基础数据类型基本一样
 let isDone: boolean = true;
 ```
 
-### 数字
+### 数字 Number
 
 Typescript 里的数都是浮点数，都是 number 类型，除了支持十进制和十六进制，还支持
 了二进制和八进制。
@@ -24,7 +24,7 @@ let binaryLiteral: number = 0b1010;
 let octalLiteral: number = 0o744;
 ```
 
-### 字符串
+### 字符串 String
 
 用双引号（""）或者是单引号（''）表示的内容就是字符串，string。
 
@@ -39,7 +39,7 @@ let name: string = '小米';
 let sentence: string = `他的名字叫:${name}`; //  他的名字叫:小米
 ```
 
-### 数组
+### 数组 Array
 
 定义数组的方式有俩种：
 
@@ -54,3 +54,5 @@ let list: number[] = [1, 2, 3];
 ```typescript
 let list: Array<number> = [1, 2, 3];
 ```
+
+### 元组 Tuple
