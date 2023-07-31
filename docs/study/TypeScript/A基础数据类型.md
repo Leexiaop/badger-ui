@@ -56,3 +56,138 @@ let list: Array<number> = [1, 2, 3];
 ```
 
 ### 元组 Tuple
+
+元组类型允许表示一个已知元素数量和类型的数组，各元素的类型不必相同。
+
+```typescript
+// Declare a tuple type
+let x: [string, number];
+// Initialize it
+x = ['hello', 10]; // OK
+// Initialize it incorrectly
+x = [10, 'hello']; // Error
+```
+
+### 枚举
+
+enum 类型是对 JavaScript 标准数据类型的一个补充。
+
+```typescript
+enum Color {
+	Red,
+	Green,
+	Blue,
+}
+let c: Color = Color.Green;
+```
+
+默认情况下，从 0 开始为元素编号。 你也可以手动的指定成员的数值。枚举类型提供的一
+个便利是你可以由枚举的值得到它的名字。
+
+### Any
+
+我们在编程阶段还不清楚类型的变量指定一个类型，可以是 any，它允许你在编译时可选择
+地包含或移除类型检查。
+
+```typescript
+let notSure: any = 4;
+notSure.ifItExists(); // okay, ifItExists might exist at runtime
+notSure.toFixed(); // okay, toFixed exists (but the compiler doesn't check)
+
+let prettySure: Object = 4;
+prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'.
+```
+
+### void
+
+某种程度上来说，void 类型像是与 any 类型相反，它表示没有任何类型。 当一个函数没
+有返回值时，你通常会见到其返回值类型是 void,声明一个 void 类型的变量没有什么大用
+，因为你只能为它赋予 undefined 和 null。
+
+```typescript
+function warnUser(): void {
+	console.log('This is my warning message');
+}
+
+let unusable: void = undefined;
+```
+
+### Null 和 Undefined
+
+TypeScript 里，undefined 和 null 两者各自有自己的类型分别叫做 undefined 和
+null。 和 void 相似，它们的本身的类型用处不是很大：
+
+```typescript
+// Not much else we can assign to these variables!
+let u: undefined = undefined;
+let n: null = null;
+```
+
+默认情况下 null 和 undefined 是所有类型的子类型。 就是说你可以把 null 和
+undefined 赋值给 number 类型的变量。
+
+然而，当你指定了--strictNullChecks 标记，null 和 undefined 只能赋值给 void 和它
+们各自。 这能避免 很多常见的问题。 也许在某处你想传入一个 string 或 null 或
+undefined，你可以使用联合类型 string | null | undefined。
+
+### Never
+
+never 类型表示的是那些永不存在的值的类型。never 类型是任何类型的子类型，也可以赋
+值给任何类型；然而，没有类型是 never 的子类型或可以赋值给 never 类型（除了 never
+本身之外）。 即使 any 也不可以赋值给 never。
+
+```typescript
+// 返回never的函数必须存在无法达到的终点
+function error(message: string): never {
+	throw new Error(message);
+}
+
+// 推断的返回值类型为never
+function fail() {
+	return error('Something failed');
+}
+
+// 返回never的函数必须存在无法达到的终点
+function infiniteLoop(): never {
+	while (true) {}
+}
+```
+
+### object
+
+object 表示非原始类型，也就是除 number，string，boolean，symbol，null 或
+undefined 之外的类型。
+
+使用 object 类型，就可以更好的表示像 Object.create 这样的 API。
+
+```typescript
+declare function create(o: object | null): void;
+
+create({ prop: 0 }); // OK
+create(null); // OK
+
+create(42); // Error
+create('string'); // Error
+create(false); // Error
+create(undefined); // Error
+```
+
+### 断言类型
+
+类型断言有两种形式：
+
+-   尖括号
+
+    ```typescript
+    let someValue: any = 'this is a string';
+
+    let strLength: number = (<string>someValue).length;
+    ```
+
+-   as 语法
+
+    ```typescript
+    let someValue: any = 'this is a string';
+
+    let strLength: number = (someValue as string).length;
+    ```
