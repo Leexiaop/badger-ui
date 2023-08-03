@@ -1,12 +1,15 @@
 import { defineConfig } from 'dumi';
 
+const repo = 'badger-ui';
+
 export default defineConfig({
 	title: '前端平头哥',
 	favicon: 'http://ibadgers.cn/images/logo.ico',
 	logo: 'http://ibadgers.cn/images/logo.png',
 	outputPath: 'docs-dist',
 	mode: 'site',
-	publicPath: '/',
+	base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+	publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
 	navs: [
 		{
 			title: 'Guide',
