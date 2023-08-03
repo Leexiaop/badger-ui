@@ -16,7 +16,7 @@ title: http三次握手和四次挥手
 -   第三次握手，客户端收到 SYN 报文之后，会发送一个 ACK 报文，值为 ISN+1，此时客
     户端处于 ESTABLISHED 状态。服务器收到 ACK 报文之后，也处于 ESTABLISHED 状态
     ，此时，双方已建立起了连接
-    ![http三次握手](http://ibadgers.cn/images/interview_http_tcp_woshou.png) 上
+    ![http三次握手](http://ibadgers.cn/images/interview/http_tcp_woshou.png) 上
     述每一次握手的作用如下：
 -   第一次握手：客户端发送网络包，服务端收到了,这样服务端就能得出结论：客户端的
     发送能力、服务端的接收能力是正常的。
@@ -51,7 +51,7 @@ tcp 终止一次链接，需要经过四次挥手，过程如下：
     序列号值 +1 作为自己 ACK 报文的序列号值，此时客户端处于 TIME_WAIT 状态。需要
     过一阵子以确保服务端收到自己的 ACK 报文之后才会进入 CLOSED 状态，服务端收到
     ACK 报文之后，就处于关闭连接了，处于 CLOSED 状态
-    ![http四次挥手](http://ibadgers.cn/images/interview_http_tcp_huishou.png)
+    ![http四次挥手](http://ibadgers.cn/images/interview/http_tcp_huishou.png)
 
 ### 四次挥手的原因
 
@@ -61,4 +61,4 @@ tcp 终止一次链接，需要经过四次挥手，过程如下：
 
 ## 总体流程
 
-![http三次握手和四次挥手](http://ibadgers.cn/images/interview_http_tcp_wohui.png)
+![http三次握手和四次挥手](http://ibadgers.cn/images/interview/http_tcp_wohui.png)

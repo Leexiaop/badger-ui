@@ -65,10 +65,22 @@ export default () => {
 
 ## 源码
 
-```js
-import React, { useState, useRef, useEffect } from 'react';
+```ts
+import React, { ReactNode, useState, useRef, useEffect } from 'react';
 
 let requestId: any = null;
+
+interface props {
+	list?: Array<String>;
+	speed?: number;
+	color?: string;
+	textStyle: Object;
+	isStop?: Boolean;
+	onMouseLeave: (index: number) => void;
+	onMouseOver: (index: number) => void;
+	onClick: (index: number) => void;
+	children?: ReactNode;
+}
 
 export default ({
 	list = [],
@@ -80,20 +92,10 @@ export default ({
 	onMouseOver,
 	onClick,
 	children,
-}: {
-	list?: Array<String>,
-	speed?: number,
-	color?: string,
-	textStyle: Object,
-	isStop?: Boolean,
-	onMouseLeave: Function,
-	onMouseOver: Function,
-	onClick: Function,
-	children?: any,
-}) => {
-	const [key, setKey] = useState < number > 0;
-	const containerRef = useRef < any > null;
-	const textRef = useRef < any > null;
+}: props) => {
+	const [key, setKey] = useState<number>(0);
+	const containerRef = useRef<any>(null);
+	const textRef = useRef<any>(null);
 
 	useEffect(() => {
 		let container = containerRef?.current?.clientWidth;

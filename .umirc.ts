@@ -33,6 +33,10 @@ export default defineConfig({
 			path: '/leetcode',
 		},
 		{
+			title: '实用网站和项目',
+			path: '/program',
+		},
+		{
 			title: 'GitHub',
 			path: 'https://github.com/Leexiaop/',
 		},
