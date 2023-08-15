@@ -105,6 +105,12 @@ title: 官网地址
             <span>WebGL文档</span>
         </a>
     </li>
+    <li>
+        <a href="https://ant.design/">
+            <img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
+            <span>Ant Design 5.0文档</span>
+        </a>
+    </li>
 </ul>
 
 <style>
