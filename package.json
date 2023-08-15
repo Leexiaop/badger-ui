@@ -7,7 +7,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
+    "deploy": "gh-pages -d dist",
     "publish": "gh-pages -d dist",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
@@ -41,7 +41,7 @@
     "@umijs/test": "^3.0.5",
     "dumi": "^1.1.0",
     "father": "^4.0.0-rc.2",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.0.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
