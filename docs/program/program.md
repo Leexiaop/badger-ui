@@ -74,6 +74,12 @@ title: 实用网站和项目
         </a>
     </li>
     <li>
+        <a href="https://glbxz.com/glbxz/editor/index.html">
+            <img src="https://glbxz.com/wp-content/uploads/2023/03/1679740176-d02a42d9cb3dec9.png" />
+            <span>GLB素材在线编辑</span>
+        </a>
+    </li>
+    <li>
         <a href="https://github.com/mtsee/vr-hall">
             <span style="font-weight: 600;font-size: 24px;">vr-hall</span>
         </a>
@@ -86,6 +92,12 @@ title: 实用网站和项目
     <li>
         <a href="https://github.com/celestiary/web">
             <span style="font-weight: 600;font-size: 24px;">Celestiary</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://glbxz.com/">
+            <img src="https://glbxz.com/wp-content/uploads/2023/03/1679740176-d02a42d9cb3dec9.png" />
+            <span>GLB素材下载网</span>
         </a>
     </li>
 </ul>
