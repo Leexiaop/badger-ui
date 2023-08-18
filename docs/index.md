@@ -6,22 +6,22 @@ hero:
         - text: Getting Started
           link: /components
 features:
-    - icon: http://ibadgers.cn/images/1.png
+    - icon: https://leexiaop.github.io/statics/ibadgers/1.png
       title: 组件不再是UI界面
       desc: 组件库不再是像其他只关注UI界面组件，而是更加关注业务场景，使用起来也方便至极，源码就在下面，可以学习思想，结合自己的场景稍加改动，即可适用任何你在用的技术栈，让你的不再为少见场景下开发组件难而发愁。
-    - icon: http://ibadgers.cn/images/2.png
+    - icon: https://leexiaop.github.io/statics/ibadgers/2.png
       title: 面试题分模块深入原理
       desc: 面试题仅仅是想起什么就是什么的八股文，我们做了精细的模块划分。将各公司常见的面试题收入进来。一一给出答案，并且尽量的做到深入原理，在coding环节，也尽可能多的写出代码。提高自身的coding能力。
-    - icon: http://ibadgers.cn/images/3.png
+    - icon: https://leexiaop.github.io/statics/ibadgers/3.png
       title: Leetcode算法天天刷
       desc: 互联网如此的浪潮下，如何能找到更好的工作。唯一的方法就是提高自己的能力，面试中算法水平的高低是决定你能去什么样的公司，能拿多少钱的关键，所以，卷算法是你唯一的选择。
-    - icon: http://ibadgers.cn/images/4.png
+    - icon: https://leexiaop.github.io/statics/ibadgers/4.png
       title: 学习拔高进阶是硬道理
       desc: 曾经一直以为只要在自己的那一亩三分地深入研究就可以了，但是谁又能预料到当前的行业情况又是这样的起伏不定。所以，学习一些新的东西是势在必行，我选择了3D方向，和go语言。为自己增加一些筹码。
-    # - icon: http://ibadgers.cn/images/5.png
+    # - icon: https://leexiaop.github.io/statics/ibadgers/5.png
     #   title: 源码完全开放，相互进步
     #   desc: 我们在组件的设计上，并不会过多的关注UI方面的问题，将UI方面的样式尽量留给使用者，我们设计的核心是解决业务中的相关问题。这是我们唯一的出发点。
-    - icon: http://ibadgers.cn/images/6.png
+    - icon: https://leexiaop.github.io/statics/ibadgers/6.png
       title: 卷是脚下的路
       desc: 未来路在哪里，加班使常态，累。未来路在哪里，技术还总缺那么一点点，卷。。。
 footer: 备案号 A20220625-0033 | Copyright © 2022<br />Powered by Lee!
