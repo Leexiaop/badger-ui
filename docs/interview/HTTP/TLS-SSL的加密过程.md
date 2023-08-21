@@ -11,9 +11,9 @@ TLS/SSL 的功能实现主要依赖三类基本算法：散列函数 hash，对�
 -   对称加密算法采用协商密钥对数据加密
 -   非对称加密实现身份的验证和密钥协商
 
-<!-- ![TLS/SSL加密](http://ibadgers.cn/images/interview/http_ssl.jpg) -->
+<!-- ![TLS/SSL加密](http://leexiaop.github.io/statics/ibadgers/interview/http_ssl.jpg) -->
 
-![TLS/SSL加密](http://ibadgers.cn/images/interview/http_ssl.jpg)
+![TLS/SSL加密](http://leexiaop.github.io/statics/ibadgers/interview/http_ssl.jpg)
 
 #### 散列函数
 

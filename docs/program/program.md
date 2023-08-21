@@ -5,7 +5,7 @@ title: 实用网站和项目
 <ul class="program">
     <li>
         <a href="https://tinypng.com/">
-            <img src="../../public/images/program/shrunk.png" />
+            <img src="http://leexiaop.github.io/statics/ibadgers/program/shrunk.png" />
             <span>熊猫图片压缩</span>
         </a>
     </li>
@@ -133,8 +133,8 @@ title: 实用网站和项目
     }
     ul.program > li > a > img {
         display: block;
-        width: 96px;
-        height: 96px;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
     }
 </style>

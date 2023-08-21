@@ -197,4 +197,4 @@ output: {
 
 ## 总结
 
-![webpack打包流程](http://ibadgers.cn/images/interview/webpack_2.png)
+![webpack打包流程](http://leexiaop.github.io/statics/ibadgers/interview/webpack_2.png)

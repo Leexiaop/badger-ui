@@ -4,8 +4,8 @@ const repo = 'badger-ui';
 
 export default defineConfig({
 	title: '前端平头哥',
-	favicon: 'http://ibadgers.cn/images/logo.ico',
-	logo: 'http://ibadgers.cn/images/logo.png',
+	favicon: 'http://leexiaop.github.io/statics/ibadgers/logo.ico',
+	logo: 'http://leexiaop.github.io/statics/ibadgers/logo.png',
 	outputPath: 'docs-dist',
 	mode: 'site',
 	base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
