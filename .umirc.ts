@@ -16,9 +16,10 @@ export default defineConfig({
 	logo: 'http://leexiaop.github.io/static/ibadgers/logo.png',
 	mode: 'site',
 	hash: true,
-	base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
-	publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
-	exportStatic: {},
+	// base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+	// publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+	base: '/badger-ui/',
+	publicPath: '/badger-ui/',
 	navs: [
 		{
 			title: 'Guide',
