@@ -1,5 +1,0 @@
----
-title: OpenLayers
----
-
-## OpenLayers
