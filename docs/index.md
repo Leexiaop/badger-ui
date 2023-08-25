@@ -1,4 +1,4 @@
----
+<!-- ---
 hero:
     title: Badger Front-end Develop
     desc: 读万卷书，行万里路，代码运行了那么久，却总觉得不是最优秀...
@@ -25,7 +25,11 @@ features:
       title: 卷是脚下的路
       desc: 未来路在哪里，加班使常态，累。未来路在哪里，技术还总缺那么一点点，卷。。。
 footer: 备案号 A20220625-0033 | Copyright © 2022<br />Powered by Lee!
+--- -->
+
 ---
+
+## title: ibadgers
 
 ## Badger Front-end Develop 的初衷
 
