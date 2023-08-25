@@ -16,6 +16,7 @@ export default defineConfig({
 	logo: 'http://leexiaop.github.io/statics/ibadgers/logo.png',
 	outputPath: 'docs-dist',
 	mode: 'site',
+	hash: true,
 	base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
 	publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
 	exportStatic: {},
