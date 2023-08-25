@@ -1,12 +1,25 @@
+/*
+ * @Author: Leexiaop 282191344@qq.com
+ * @Date: 2023-07-17 11:46:39
+ * @LastEditors: Leexiaop 282191344@qq.com
+ * @LastEditTime: 2023-08-25 14:49:55
+ * @FilePath: \badger-ui\.umirc.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { defineConfig } from 'dumi';
+
+const repo = 'badger-ui';
 
 export default defineConfig({
 	title: '前端平头哥',
-	favicon: 'https://leexiaop.github.io/statics/ibadgers/logo.ico',
-	logo: 'https://leexiaop.github.io/statics/ibadgers/logo.png',
-	outputPath: 'docs-dist',
+	favicon: './public/logo.ico',
+	logo: 'http://leexiaop.github.io/static/ibadgers/logo.png',
 	mode: 'site',
-	publicPath: '/',
+	hash: true,
+	// base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+	// publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+	base: '/badger-ui/',
+	publicPath: '/badger-ui/',
 	navs: [
 		{
 			title: 'Guide',

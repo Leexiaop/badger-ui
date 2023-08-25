@@ -177,4 +177,4 @@ export default ({
 ```
 
 更多问题请联系： <br />
-<img src="https://leexiaop.github.io/statics/ibadgers/wechat.jpeg" width="260" />
+<img src="http://leexiaop.github.io/static/ibadgers/wechat.jpeg" width="260" />

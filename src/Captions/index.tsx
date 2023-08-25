@@ -1,5 +1,4 @@
 import React, { ReactNode, useState, useRef, useEffect } from 'react';
-
 let requestId: any = null;
 
 interface props {

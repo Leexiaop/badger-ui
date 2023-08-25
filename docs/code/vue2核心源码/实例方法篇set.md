@@ -161,4 +161,4 @@ ob.dep.notify();
 
 以上，就是`set`方法的内部原理。其逻辑流程图如下：
 
-![set](https://leexiaop.github.io/statics/ibadgers/code/vue2/method.jpg)
+![set](http://leexiaop.github.io/static/ibadgers/code/vue2/method.jpg)
