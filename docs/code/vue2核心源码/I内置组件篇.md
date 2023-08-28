@@ -467,7 +467,11 @@ else {
 
 它的算法是这样子的：
 
-![](http://leexiaop.github.io/static/ibadgers/code/vue2/component_3.png)
+<<<<<<< HEAD
+![](https://leexiaop.github.io/statics/ibadgers/code/vue2/component_3.png)
+======= ![](http://leexiaop.github.io/static/ibadgers/code/vue2/component_3.png)
+
+> > > > > > > 3fa2e091f6c9bef5dc8018c00085f06f5a4e700f
 
 1. 将新数据从尾部插入到`this.keys`中；
 2. 每当缓存命中（即缓存数据被访问），则将数据移到`this.keys`的尾部；
@@ -550,7 +554,11 @@ let vm = new Vue({
 `<keep-alive>`组件包裹了一个动态组件，这个动态组件默认指向组件`A`，当点
 击`switch`按钮时，动态切换组件`A`和`B`。我们来看下效果：
 
-![](http://leexiaop.github.io/static/ibadgers/code/vue2/component_4.png)
+<<<<<<< HEAD
+![](https://leexiaop.github.io/statics/ibadgers/code/vue2/component_4.png)
+======= ![](http://leexiaop.github.io/static/ibadgers/code/vue2/component_4.png)
+
+> > > > > > > 3fa2e091f6c9bef5dc8018c00085f06f5a4e700f
 
 从图中我们可以看到，当第一次打开页面时，组件`A`被挂载，执行了组
 件`A`的`mounted`和`activated`钩子函数，当点击`switch`按钮后，组件`A`停止调用，同
