@@ -2,7 +2,7 @@
  * @Author: Leexiaop 282191344@qq.com
  * @Date: 2023-07-17 11:46:39
  * @LastEditors: Leexiaop 282191344@qq.com
- * @LastEditTime: 2023-08-25 14:49:55
+ * @LastEditTime: 2023-08-28 09:41:43
  * @FilePath: \badger-ui\.umirc.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -15,11 +15,11 @@ export default defineConfig({
 	favicon: './public/logo.ico',
 	logo: 'http://leexiaop.github.io/static/ibadgers/logo.png',
 	mode: 'site',
-	hash: true,
-	// base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
-	// publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
-	base: '/badger-ui/',
-	publicPath: '/badger-ui/',
+	history: {
+		type: 'hash',
+	},
+	base: `/${repo}/`,
+	publicPath: process.env.NODE_ENV === 'development' ? `/${repo}/` : './',
 	navs: [
 		{
 			title: 'Guide',
