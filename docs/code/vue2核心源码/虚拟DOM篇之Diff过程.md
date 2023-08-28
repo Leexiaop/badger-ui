@@ -166,12 +166,7 @@ function patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly) {
 
 整体的流程：
 
-<<<<<<< HEAD
-![vue中VNode更新流程](https://leexiaop.github.io/statics/ibadgers/code/vue2/vnode_update.png)
-=======
 ![vue中VNode更新流程](http://leexiaop.github.io/static/ibadgers/code/vue2/vnode_update.png)
-
-> > > > > > > 3fa2e091f6c9bef5dc8018c00085f06f5a4e700f
 
 你可能注意到了，如果新旧 VNode 里都包含了子节点，那么对于子节点的更新在代码里调
 用了 updateChildren 方法.下一张学习这个方法。
