@@ -4,5 +4,5 @@ title: 学习进阶概览
 
 ## 学习进阶概览
 
-![学习进阶概览](http://leexiaop.github.io/static/ibadgers/study/study.png) 持续
+![学习进阶概览](https://leexiaop.github.io/static/ibadgers/study/study.png) 持续
 更新中...

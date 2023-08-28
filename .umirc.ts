@@ -13,7 +13,7 @@ const repo = 'badger-ui';
 export default defineConfig({
 	title: '前端平头哥',
 	favicon: './public/logo.ico',
-	logo: 'http://leexiaop.github.io/static/ibadgers/logo.png',
+	logo: 'https://leexiaop.github.io/static/ibadgers/logo.png',
 	mode: 'site',
 	history: {
 		type: 'hash',
