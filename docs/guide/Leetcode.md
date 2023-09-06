@@ -1,5 +1,0 @@
----
-title: Leetcode
----
-
-## Leetcode

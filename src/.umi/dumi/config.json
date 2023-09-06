@@ -1,0 +1,315 @@
+{
+  "menus": {
+    "en-US": {
+      "/components": [
+        {
+          "title": "滚动字幕",
+          "path": "/components/captions",
+          "meta": {},
+          "children": []
+        }
+      ],
+      "*": [
+        {
+          "path": "/",
+          "title": "Badger Front-end Develop 的初衷",
+          "meta": {}
+        }
+      ],
+      "/code": [
+        {
+          "title": "Vue2核心源码",
+          "path": "/code/vue2核心源码",
+          "meta": {},
+          "children": [
+            {
+              "path": "/code/vue2核心源码/虚拟dom篇之diff过程",
+              "title": "虚拟DOM篇之Diff过程",
+              "meta": {
+                "order": 5
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/虚拟dom篇之update子节点",
+              "title": "虚拟DOM篇之Update子节点",
+              "meta": {
+                "order": 6
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/模版编译篇",
+              "title": "模版编译篇",
+              "meta": {
+                "order": 8
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/模版编译篇总结",
+              "title": "模版编译篇总结",
+              "meta": {
+                "order": 13
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/生命周期篇",
+              "title": "生命周期篇",
+              "meta": {
+                "order": 14
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/生命周期篇之初始化5",
+              "title": "生命周期篇之初始化initState",
+              "meta": {
+                "order": 19
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/生命周期篇之初始化6",
+              "title": "生命周期篇之初始化模版编译阶段",
+              "meta": {
+                "order": 20
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/生命周期篇之初始化7",
+              "title": "生命周期篇之初始化挂载阶段",
+              "meta": {
+                "order": 21
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/生命周期篇之初始化8",
+              "title": "生命周期篇之初始化销毁阶段",
+              "meta": {
+                "order": 22
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/实例方法篇set",
+              "title": "实例方法篇set",
+              "meta": {
+                "order": 28
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/过滤篇之工作原理",
+              "title": "过滤器之工作原理",
+              "meta": {
+                "order": 31
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/过滤篇之过滤器解析",
+              "title": "过滤器之过滤器解析",
+              "meta": {
+                "order": 33
+              }
+            },
+            {
+              "path": "/code/vue2核心源码/内置组件篇",
+              "title": "内置组件篇之keep-alive",
+              "meta": {
+                "order": 35
+              }
+            }
+          ]
+        }
+      ],
+      "/interview": [
+        {
+          "path": "/interview",
+          "title": "前端面试概览",
+          "meta": {}
+        },
+        {
+          "title": "HTTP",
+          "path": "/interview/http",
+          "meta": {},
+          "children": [
+            {
+              "path": "/interview/http/http三次握手和四次挥手",
+              "title": "http三次握手和四次挥手",
+              "meta": {}
+            },
+            {
+              "path": "/interview/http/http缓存是什么",
+              "title": "http缓存是什么",
+              "meta": {}
+            },
+            {
+              "path": "/interview/http/tls-ssl的加密过程",
+              "title": "TLS/SSL的加密过程",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Vue系列",
+          "path": "/interview/vue系列",
+          "meta": {},
+          "children": [
+            {
+              "path": "/interview/vue系列/vue的ssr是如何实现的",
+              "title": "Vue的SSR是如何实现的",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "path": "/interview/其他",
+          "meta": {},
+          "children": [
+            {
+              "path": "/interview/其他/单点登录是什么",
+              "title": "单点登录是什么",
+              "meta": {}
+            },
+            {
+              "path": "/interview/其他/移动端长列表优化",
+              "title": "移动端长列表优化",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "前端工程化",
+          "path": "/interview/前端工程化",
+          "meta": {},
+          "children": [
+            {
+              "path": "/interview/前端工程化/webpack构建流程",
+              "title": "webpack构建流程",
+              "meta": {}
+            },
+            {
+              "path": "/interview/前端工程化/对webpack的理解",
+              "title": "对webpack的理解",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "小程序",
+          "path": "/interview/小程序",
+          "meta": {},
+          "children": [
+            {
+              "path": "/interview/小程序/微信小程序如何实现分包配置",
+              "title": "微信小程序如何实现分包配置",
+              "meta": {}
+            },
+            {
+              "path": "/interview/小程序/微信小程序的实现原理",
+              "title": "微信小程序的实现原理",
+              "meta": {}
+            },
+            {
+              "path": "/interview/小程序/微信小程序的支付流程",
+              "title": "微信小程序的支付流程",
+              "meta": {}
+            },
+            {
+              "path": "/interview/小程序/微信小程序的登录流程",
+              "title": "微信小程序的登录流程",
+              "meta": {}
+            }
+          ]
+        }
+      ],
+      "/leetcode": [
+        {
+          "title": "经典案例",
+          "path": "/leetcode/经典案例",
+          "meta": {},
+          "children": [
+            {
+              "path": "/leetcode/经典案例/爬楼梯",
+              "title": "70.爬楼梯",
+              "meta": {}
+            }
+          ]
+        }
+      ],
+      "/program": [
+        {
+          "path": "/program",
+          "title": "官网地址",
+          "meta": {}
+        },
+        {
+          "path": "/program/program",
+          "title": "实用网站和项目",
+          "meta": {}
+        }
+      ],
+      "/study": [
+        {
+          "path": "/study",
+          "title": "学习进阶概览",
+          "meta": {}
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {
+    "en-US": [
+      {
+        "title": "Guide",
+        "path": "/guide"
+      },
+      {
+        "title": "组件库",
+        "path": "/components"
+      },
+      {
+        "title": "前端面试",
+        "path": "/interview"
+      },
+      {
+        "title": "学习进阶",
+        "path": "/study"
+      },
+      {
+        "title": "前端源码解析",
+        "path": "/code"
+      },
+      {
+        "title": "LeetCode",
+        "path": "/leetcode"
+      },
+      {
+        "title": "实用网站和项目",
+        "path": "/program"
+      },
+      {
+        "title": "GitHub",
+        "path": "https://github.com/Leexiaop/"
+      },
+      {
+        "title": "Blog",
+        "path": "https://leexiaop.github.io/"
+      },
+      {
+        "title": "CSDN",
+        "path": "https://blog.csdn.net/leelxp/"
+      }
+    ]
+  },
+  "title": "前端平头哥",
+  "logo": "http://leexiaop.github.io/static/ibadgers/logo.png",
+  "mode": "site",
+  "repository": {
+    "url": "https://github.com/umijs/dumi",
+    "branch": "master",
+    "platform": "github"
+  },
+  "theme": {}
+}
