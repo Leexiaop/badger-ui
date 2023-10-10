@@ -18,6 +18,18 @@
       ],
       "/code": [
         {
+          "title": "React核心源码",
+          "path": "/code/react核心源码",
+          "meta": {},
+          "children": [
+            {
+              "path": "/code/react核心源码",
+              "title": "总览",
+              "meta": {}
+            }
+          ]
+        },
+        {
           "title": "Vue2核心源码",
           "path": "/code/vue2核心源码",
           "meta": {},

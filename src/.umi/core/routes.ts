@@ -64,7 +64,6 @@ export function getRoutes() {
         "meta": {
           "filePath": "src/Captions/index.md",
           "updatedTime": 1693215121000,
-          "componentName": "Captions",
           "title": "滚动字幕",
           "nav": {
             "title": "滚动字幕",
@@ -162,12 +161,48 @@ export function getRoutes() {
         "title": "Badger Front-end Develop 的初衷 - 前端平头哥"
       },
       {
+        "path": "/code/react核心源码",
+        "component": require('D:/lee/badger-ui/docs/code/react核心源码/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/code/react核心源码/index.md",
+          "updatedTime": 1692956987000,
+          "title": "总览",
+          "slugs": [
+            {
+              "depth": 3,
+              "value": "如何学习",
+              "heading": "如何学习"
+            },
+            {
+              "depth": 3,
+              "value": "总体结构",
+              "heading": "总体结构"
+            },
+            {
+              "depth": 3,
+              "value": "常见的面试题",
+              "heading": "常见的面试题"
+            }
+          ],
+          "nav": {
+            "path": "/code",
+            "title": "Code"
+          },
+          "group": {
+            "path": "/code/react核心源码",
+            "title": "React核心源码"
+          }
+        },
+        "title": "总览 - 前端平头哥"
+      },
+      {
         "path": "/code/vue2核心源码/内置组件篇",
         "component": require('D:/lee/badger-ui/docs/code/vue2核心源码/内置组件篇.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue2核心源码/内置组件篇.md",
-          "updatedTime": 1693215121000,
+          "updatedTime": 1693988127000,
           "title": "内置组件篇之keep-alive",
           "order": 35,
           "slugs": [
@@ -1447,13 +1482,13 @@ export function getRoutes() {
         "redirect": "/components/captions"
       },
       {
-        "path": "/code/vue2核心源码",
+        "path": "/code",
         "meta": {},
         "exact": true,
         "redirect": "/code/vue2核心源码/虚拟dom篇之diff过程"
       },
       {
-        "path": "/code",
+        "path": "/code/vue2核心源码",
         "meta": {},
         "exact": true,
         "redirect": "/code/vue2核心源码/虚拟dom篇之diff过程"
